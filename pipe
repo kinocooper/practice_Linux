@@ -1,0 +1,3 @@
+tty=`tty | sed -e 's|/dev/||'`
+ps alx | grep $tty | cat -n
+

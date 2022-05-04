@@ -1,0 +1,8 @@
+#!/bin/bash
+
+trap 'echo "...CTRL+C is pressed."' 2 # trapにてSIGINT(2)を受信した時に中止せず別の処理を実行
+while /bin/true
+do
+	sleep 3600
+done
+
